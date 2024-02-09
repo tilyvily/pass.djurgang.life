@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tilyvily pass</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="passBox">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" class="value" readonly="readonly" id="resultValue">
+                    <input type="button" class="reroll" id="reroll" value="Roll" onclick='generateString(antal)'>
+                    <input type="button" class="reroll" id="copy" value="Copy" onclick="copyPasswd()">
+                </div>
+                  <div class="bottomBox">
+                    <div class="slidecontainer">   
+                        <input type="range" min="1" max="30" value="15" class="slider" id="myRange" orient="vertical" >
+                    <div class="karakBox">
+                        <input type="number" name="characters" id="karakInput">
+                        <p>Antal Karaktärer</p>
+                    </div>
+                    </div>
+                    <div class="toggles">
+                        <div class="nummer">
+                            <label class="switch">
+                                <input type="checkbox" style="border:0;outline:0;">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Nummer</p>
+                        </div>
+                        <div class="nummer">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Stor Bokstav</p>
+                        </div>
+                        <div class="nummer">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Liten Bokstav</p>
+                        </div>
+                        <div class="nummer">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p>Symboler</p>
+                        </div>
+                    </div>
+                  </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
